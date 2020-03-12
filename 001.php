@@ -3,7 +3,7 @@
 /** Problem 1: Multiples of 3 and 5
  * https://projecteuler.net/problem=1
  *
- * This problem is very straightford, let's spiff it up by writing a solution
+ * This problem is very straightforward, let's spiff it up by writing a solution
  * in a functional style, despite using PHP.
  */
 
@@ -40,7 +40,7 @@ function filter(callable $fn): callable
 
 function euler001(int $bound): int
 {
-    return sum(filter(either(multiple(3), multiple(5)))(range(0, $bound -1)));
+    return sum(filter(either(multiple(3), multiple(5)))(range(0, $bound - 1)));
 }
 
 // Main
