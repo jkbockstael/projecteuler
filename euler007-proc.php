@@ -21,9 +21,4 @@ function euler007(int $count): int
 }
 
 // Main
-if ($argc != 2) {
-    echo "Usage: ${argv[0]} nth" . PHP_EOL;
-    echo "Example: ${argv[0]} 6" . PHP_EOL;
-} else {
-    echo euler007(intval($argv[1])) . PHP_EOL;
-}
+echo euler007(intval(trim(file_get_contents('php://STDIN')))) . PHP_EOL;

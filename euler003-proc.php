@@ -23,9 +23,4 @@ function euler003(int $number): int
 }
 
 // Main
-if ($argc != 2) {
-    echo "Usage: ${argv[0]} number" . PHP_EOL;
-    echo "Example: ${argv[0]} 13195" . PHP_EOL;
-} else {
-    echo euler003(intval($argv[1])) . PHP_EOL;
-}
+echo euler003(intval(trim(file_get_contents('php://STDIN')))) . PHP_EOL;

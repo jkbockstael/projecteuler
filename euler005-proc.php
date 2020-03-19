@@ -19,9 +19,4 @@ function euler005(int $bound): int
 }
 
 // Main
-if ($argc != 2) {
-    echo "Usage: ${argv[0]} bound" . PHP_EOL;
-    echo "Example: ${argv[0]} 10" . PHP_EOL;
-} else {
-    echo euler005(intval($argv[1])) . PHP_EOL;
-}
+echo euler005(intval(trim(file_get_contents('php://STDIN')))) . PHP_EOL;
