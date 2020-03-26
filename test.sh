@@ -9,7 +9,7 @@
 #   - eulerXXX-testinput, that contains the example input from the problem page
 #   - eulerXXX-testexpected, that contains the correct output for that input
 
-for program in $(ls euler*.php); do
+for program in $(ls euler*.php euler*.py); do
     basename=${program:0:8}
     test_input_file="${basename}-testinput"
     test_expected_output_file="${basename}-testexpected"
