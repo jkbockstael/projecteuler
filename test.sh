@@ -31,8 +31,8 @@ for program in $(ls euler*.php euler*.py); do
     color_green=$(tput setaf 2)
     color_reset=$(tput sgr0)
     if [ "$test_result" = "$expected_value" ]; then
-        echo "${color_green}✓${color_reset} $program : OK"
+        echo "${color_green}✓${color_reset} $program"
     else
-        echo "${color_red}✗${color_reset} $program : KO"
+        echo "${color_red}✗${color_reset} $program"
     fi
 done
