@@ -19,7 +19,7 @@ function euler003(int $number): int
     if ($number != 1) {
         $factors[] = $number;
     }
-    return (count($factors) == 0) ? 1 : end($factors);
+    return (count($factors) == 0) ? $number : end($factors);
 }
 
 // Main
