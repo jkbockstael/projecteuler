@@ -22,7 +22,6 @@ function parseInput(string $input): array
 function largestProduct(int $count, array $grid): int
 {
     $size = count($grid);
-    $count = 4;
     $largestProduct = 0;
     // Lines
     for ($line = 0; $line < $size; $line++) {
