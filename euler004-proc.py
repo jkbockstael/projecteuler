@@ -5,7 +5,7 @@
 
 import sys
 
-def euler003(digits):
+def euler004(digits):
     largest = 0;
     for a in range(10 ** (digits - 1), 10 ** digits):
         for b in range(10 ** (digits - 1), 10 ** digits):
@@ -18,4 +18,4 @@ def parse_input(lines):
     return int(lines[0].strip())
 
 if __name__ == "__main__":
-    print(euler003(parse_input(sys.stdin.readlines())))
+    print(euler004(parse_input(sys.stdin.readlines())))
